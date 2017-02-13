@@ -4,24 +4,25 @@
 		<meta charset="Utf-8" />
 		<title>Kartka</title>
 		<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-		<link href="https://fonts.googleapis.com/css?family=Caveat|Marck+Script&amp;subset=latin-ext" rel="stylesheet"/> 
+		<link href="https://fonts.googleapis.com/css?family=Marck+Script&amp;subset=latin-ext" rel="stylesheet"/> 
 		<script>
 		function okno() 
 		{
 			var name = prompt('Podaj imię swojej sympatii:', "Kochanie");
-			if (name == null || name== "") {
-			name = "Kochanie";
+			if (name != null && name!= "") 
+			{
+			document.getElementById("imie").innerHTML = name+"!";
+			}
+		
 		}
-		document.getElementById("imie").innerHTML = name+"!";
-}
 		</script>
 	</head>
 	<body onload="okno();">
 		<img src="img/balony.png" alt="balony" id="balony" /> 
 		<div class="content">
 			
-			<h1>Kocham Cię</h1>
-			<h2 id="imie"></h2>
+			<h1>Kocham Cię,</h1>
+			<h2 id="imie">Kochanie!</h2>
 		</div>
 		<img src="img/balony.png" alt="balony" id="balony1" /> 
 		<footer>
